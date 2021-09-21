@@ -1,0 +1,52 @@
+.content {
+    mat-toolbar {
+        background: #004a9f;
+        color: white;
+    }
+    border-radius: 10px;
+    margin-top:100px;
+    margin: 16px;
+    margin-left: 32px;
+    display: left;
+    justify-content:left;
+    align-items: left;
+    font-size: 2rem;
+    color: lightgray;
+    .products,
+    .shopping-cart {
+        width: 40%;
+        align-items: justify-content;
+        display: flex;
+        //padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card {
+            margin: 10px;
+            width: 25%;
+            @media only screen and (max-width: 1024px) {
+                margin-left: 0px;
+                margin-right: 0px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px;
+            width: 100%;
+        }
+    }
+    .products {
+        width: 100%;
+    }
+    //display: flex;
+    //align-items: justify-content;
+    //padding: 20px;
+    //justify-content: space-around;
+    @media only screen and (max-width: 700px) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 10px;
+        width: 93%;
+    }
+}
